@@ -1,0 +1,263 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #404040;  
+}
+
+h1 {
+  font-size: 36px;
+  color: #d4e1e8;
+  letter-spacing: 1px;
+  padding: 87px 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Main navbar */
+#nav {
+  background: url('../img/bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+#nav .nav-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+  /* Overlay */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(150, 185, 198, 0.9);
+}
+
+#nav ul {
+  list-style: none;
+}
+
+#nav ul li {
+  color: #255373;
+  display: inline-block;
+  padding:  10px 40px;
+  position: relative;
+  font-size: 22;
+}
+
+#nav ul li a {
+  color: #255373;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/* Hide nested ul by default (main navbar) */
+#nav ul li ul {
+  display: none;
+}
+
+#nav ul li:hover {
+  cursor: pointer;
+  color: #d4e1e8;
+  transition: all 0.3s ease-in;
+}
+
+#nav ul li:hover a {
+  color: #d4e1e8;
+  transition: all 0.3s ease-in;
+}
+
+/* Nested dropdown show (main navbar) */
+#nav ul li:hover ul {
+  display: block;
+  position: absolute;
+  width: 130px;
+  margin-top: 5px;
+  transition: all 0.3s ease-in;
+}
+
+#nav ul li:hover ul li {
+  border-bottom: 1px solid #255373;
+  width: 100%;
+  padding: 12px;
+  text-align: left;
+  left: 0;
+}
+
+#nav ul li:hover ul li a {
+  color: #255373;
+  font-size: 16px;
+  line-height: 18px;
+  transition: all 0.3s ease-in;
+}
+
+#nav ul li:hover ul li a:hover {
+  color: #d4e1e8;
+  transition: all 0.3s ease-in;
+}
+
+/* Navbar */
+.navbar  {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  padding: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.navbar ul li {
+  color: #255373;
+  display: inline-block;
+  padding:  43px 25px;
+  position: relative;
+  font-size: 18;
+}
+
+.navbar ul li a {
+  color: #255373;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hide nested ul by default */
+.navbar ul li ul {
+  display: none;
+}
+
+.navbar ul li:hover {
+  cursor: pointer;
+  color: #d4e1e8;
+  transition: all 0.3s ease-in;
+  border-bottom: 1px solid #255373;
+}
+
+.navbar ul li:hover a {
+  color: #d4e1e8;
+  transition: all 0.3s ease-in;
+}
+
+.navbar ul li.active a {
+  color: #d4e1e8;
+}
+
+/* Nested dropdown show */
+.navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  width: 130px;
+  margin-top: 44px;
+  transition: all 0.3s ease-in;
+  z-index: 1;
+}
+
+.navbar ul li:hover ul li {
+  background: #ffffff;
+  border-bottom: 1px solid #255373;
+  width: 100%;
+  padding: 12px;
+  text-align: left;
+  left: 0;
+}
+
+.navbar ul li:hover ul li a {
+  color: #255373;
+  font-size: 14px;
+  line-height: 16px;
+  transition: all 0.3s ease-in;
+}
+
+.navbar ul li:hover ul li a:hover {
+  color: #c8dbe6;
+  transition: all 0.3s ease-in;
+}
+
+/* Showcase */
+#showcase .color-line {
+  height: 2px;
+  background: #255373;
+}
+
+#showcase .showcase-bg {
+  background: url('../img/showcase.jpg') no-repeat center center/cover;
+  height: 210px;
+  position: relative;
+}
+
+#showcase .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(150, 185, 198, 0.9);
+}
+
+/* Contact */
+#contact-visual {
+  display: flex;
+}
+
+#contact-visual .contact-img {
+  background: url('../img/contact-img-1.jpg') no-repeat center center/cover;
+  flex: 1;
+}
+
+#contact-visual .map {
+  flex: 1;
+}
+
+#contact-visual .map-width {
+  width: 100%;
+}
+
+#contact-info .contact-items {
+  display: flex;
+  padding: 15px 0;
+}
+
+#contact-info .contact-item {
+  flex: 1;
+  text-align: center;
+  padding: 35px 0;
+}
+
+#contact-info .contact-item i {
+  color: #255373;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+#footer {
+  background: #255373;
+  color: #9bacb6;
+  padding: 50px;
+}
+
+#footer .footer-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer .copyright {
+  padding: 7px;
+}
+
+#footer .social-icone a {
+  color: #9bacb6;
+}
