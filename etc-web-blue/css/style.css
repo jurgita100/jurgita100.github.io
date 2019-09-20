@@ -1,9 +1,9 @@
 :root {
   --dark-blue: #255373;
   --light-blue: #d4e1e8;
-/*   --light-blue: #ebe312; */
+  /* --light-blue: #ebe312; */
   --darker-blue: #9bacb6;
-/*   --darker-blue: #ebe312; */
+  /* --darker-blue: #ebe312; */
 }
 
 body {
@@ -38,7 +38,12 @@ h5 {
   margin-bottom: 15px;
 }
 
+p {
+  line-height: 18px;
+}
+
 .container {
+  width: 90%;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
@@ -241,7 +246,7 @@ h5 {
 
 /* About */
 .text {
-  padding: 75px 0;
+  padding: 100px 0;
 }
 
 .text p {
@@ -250,7 +255,7 @@ h5 {
 
 /* Team */
 #team{
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 #team .team-flex{
@@ -260,14 +265,13 @@ h5 {
 }
 
 #team .team {
-  margin: 50px 30px;
+  margin: 1%;
   border: 1px solid var(--dark-blue);
-  width: 300px;
+  width: 31%;
 }
 
 #team .team-img {
   width: 100%;
-  object-fit: cover;
 }
 
 #team .team-text {
@@ -281,7 +285,7 @@ h5 {
 
 /* Events/Single-content */
 #events {
-  padding: 75px 0;
+  padding: 100px 0;
 }
 
 .event-flex {
@@ -308,14 +312,59 @@ h5 {
 }
 
 .event-link {
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .event-link a {
   color: var(--dark-blue);
+  text-decoration: none;
 }
 
 .event-link a:hover {
+  color: var(--darker-blue);
+}
+
+/* Books */
+#events {
+  padding: 100px 0;
+}
+
+.book-flex {
+  display: flex;
+}
+
+.books-img {
+  width: 30%;
+  margin: 1%;
+
+}
+
+.book-img {
+  width: 100%;
+  border: 1px solid var(--dark-blue);
+}
+
+.book-text {
+  margin: 1%;
+  width: 70%;
+  padding: 2%;
+}
+
+hr {
+  background: var(--dark-blue);
+  height: 1px;
+  border: none;
+  margin: 50px 0;
+}
+
+/* Books/Articles/Links/Video */
+.link-color {
+  color: var(--dark-blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-color:hover {
   color: var(--darker-blue);
 }
 
