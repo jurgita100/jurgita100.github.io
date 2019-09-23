@@ -308,7 +308,7 @@ p {
 .event-text {
   flex: 1;
   line-height: 18px;
-  padding: 25px 0 0 10px;;
+  padding: 25px 0 0 10px;
 }
 
 .event-link {
@@ -374,7 +374,7 @@ hr {
 }
 
 #contact-visual .contact-img {
-  background: url('../img/004-1-p.jpg') no-repeat center center/cover;
+  background: url('../img/contact-img-2.jpg') no-repeat center center/cover;
   flex: 1;
 }
 
