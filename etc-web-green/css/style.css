@@ -7,12 +7,12 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
-  color: #1c211e;  
+  color: #5b5c5b;
 }
 
 h1 {
   font-size: 36px;
-  color: #b3d56c;
+  color: #b3d56c; 
   letter-spacing: 1px;
   padding: 87px 0;
 }
@@ -239,16 +239,18 @@ p {
 .event-date {
   color: var(--dark-blue);
   padding: 10px 0;
+  font-weight: 600;
 }
 
 .event-text {
   flex: 1;
   line-height: 18px;
-  padding: 25px 0 0 10px;;
+  padding: 25px 0 0 10px;
 }
 
 .event-link {
   padding: 20px 0;
+  font-weight: 600;
 }
 
 .event-link a {
