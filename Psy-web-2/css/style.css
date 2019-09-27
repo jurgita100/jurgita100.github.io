@@ -1,0 +1,306 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 15px;
+}
+
+h2  {
+  font-size: 36px;
+  padding: 20px;
+  color: #155214;
+}
+
+h3 {
+  font-size: 22px;
+  padding: 10px;
+  color: #155214;
+}
+
+h4 {
+  font-size: 18px;
+  padding: 10px;
+  color: #155214;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Navbar */
+#navbar {
+  background: #f2f2f2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+  z-index: 1;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  display: block;
+  color: #333;
+  padding: 15px 25px;
+}
+
+#navbar ul li a:hover {
+  color: #155214;
+  border: 1px solid #155214;
+  transition: all 0.3s ease-in;
+}
+
+/* Showcase */
+#showcase {
+  background: url('../img/bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+#showcase .showcase-content {
+  text-align: center;
+  padding: 10px;
+  background: rgba(237, 237, 237, 0.8);
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  right: 10%;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 48px;
+  padding: 10px;
+  color: #155214;
+}
+
+#showcase .showcase-content p {
+  padding: 10px;
+  line-height: 20px;
+}
+
+/* About */
+#about {
+  margin: 100px;
+}
+#about .about-content {
+  padding: 40px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #145214;
+}
+
+/* Services */
+#services {
+  background: #ededed;
+  padding: 30px;
+}
+
+#services h2 {
+  text-align: center;
+}
+
+#services .box {
+  background: url('../img/services-white.jpg') no-repeat center center/cover;
+  float: left;
+  width: 25%;
+  padding: 2%;
+  margin: 2%;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid #145214;
+}
+
+/* Resume */
+#resume {
+  margin: 100px;
+}
+
+#resume .wrapper {
+  border: 1px solid #145214;
+}
+
+#resume .resume-img {
+  float: left;
+  width: 30%;
+  margin: 5% 0 5% 5%;
+}
+
+#resume .resume-content {
+  float: right;
+  width: 50%;
+  margin: 5% 5% 5% 0;
+  padding: 20px;
+  line-height: 20px;
+
+}
+
+#resume .resume-content h2 {
+  text-align: center;
+}
+
+#resume .gap {
+  margin-bottom: 20px;
+}
+
+/* Contact */
+#contact {
+  background: #ededed;
+  padding: 30px;
+  margin-top: 5px;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact .item {
+  float: left;
+  width: 23.33%;
+  padding: 3%;
+  margin: 2%;
+  text-align: center;
+}
+
+#contact .item i {
+  color: #145214;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #145214;
+}
+
+/* Footer */
+footer {
+  background: #a6a6a6;
+  padding: 30px 20px;
+}
+
+footer .copyright {
+  display: inline-block;
+  line-height: 30px;
+}
+
+footer .social-icone {
+  float: right;
+}
+
+footer .social-icone a {
+  color: #145214;
+  font-size: 30px;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLETS */
+@media screen and (max-width: 767px) {
+  /* Navbar */
+  #navbar ul li a {
+    padding: 15px 20px;
+  }
+
+  /* About */
+  #about {
+    margin: 75px 50px;
+  }
+
+  /* Services */
+  #services .box {
+    width: 92%;
+    margin: 5% 2%;
+  }
+
+  /* Resume */
+  #resume {
+    margin: 75px 50px;
+  }
+}
+
+/* MOBILES */
+@media screen and (max-width: 480px) {
+
+/* Navbar */
+#navbar ul li a {
+  padding: 10px 10px;
+  font-size: 13px;
+}
+
+/* Showcase */
+  #showcase .showcase-content{
+    left: 0;
+    right: 0;
+  }
+
+  #showcase .showcase-content h1 {
+    font-size: 42px;
+  }
+
+  /* About */
+  #about {
+    margin: 50px 25px;
+  }
+
+  #about .about-content {
+    padding: 30px;
+  }
+
+  /* Services */
+  #services {
+    padding: 20px;
+  }
+
+  /* Resume */
+  #resume {
+    margin: 50px 25px;
+  }
+
+  #resume .resume-img {
+    float: none;
+    width: 90%;
+    margin: 5% 0 0 5%;
+  }
+
+  #resume .resume-content {
+    float: none;
+    width: 90%;
+    margin: 0% 5% 5% 0%;
+  }
+
+  /* Contact */
+  #contact {
+    padding: 20px;
+  }
+
+  #contact .item {
+    width: 90%;
+  }
+
+  #contact .item i {
+    font-size: 30px;
+    padding: 15px;
+  }
+
+  /* Footer */
+  footer .copyright {
+    display: block;
+    text-align: center;
+  }
+
+  footer .social-icone {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+} 
