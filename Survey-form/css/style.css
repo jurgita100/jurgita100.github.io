@@ -1,0 +1,120 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.clear {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: url('../img/bg.jpg') no-repeat center center/cover;
+  color: #3b280a;
+  padding-bottom: 75px;
+}
+
+hr {
+  background: #3b280a;
+  height: 1px;
+  border: none;
+  margin-top: 20px;
+}
+
+#title {
+  color: #fadd5d;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.field {
+  background: #fadd5d;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#description {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.row {
+  padding: 25px;
+}
+
+.left-column {
+  float: left;
+  width: 50%;
+  text-align: end;
+  padding-right: 20px;
+}
+
+.right-column {
+  float: right;
+  width: 50%;
+}
+
+#name,
+#email,
+#number,
+#comment {
+  width: 80%;
+  padding: 5px;
+}
+
+#dropdown {
+  padding: 5px;
+}
+
+.btn {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#submit {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background: #3b280a;
+  color: #f7ebb7;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+ .field {
+   max-width: 80%;
+ }
+}
+
+/* Mobiles */
+@media screen and (max-width: 480px) {
+  .left-column,
+  .right-column {
+    float: none;
+    width: 100%;
+    text-align: left;
+    padding: 5px 0;
+  }
+
+  hr {
+    margin: 0;
+  }
+
+  #name,
+  #email,
+  #number,
+  #comment {
+  width: 100%;
+}
+
+.btn {
+  padding-top: 5px;
+}
+}

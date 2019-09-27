@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id='title'>Survey Form</h1>
+  <div class="field">
+   <p id='description'>Let us know how we can inprove cafe</p>
+   <form id="survey-form">
+      <div class="row">
+        <div class="left-column">
+          <label for="name" id="name-label">* Name:</label>
+        </div>
+        <div class="right-column">
+          <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <hr>
+      <div class="row">
+        <div class="left-column">
+          <label for="email" id="email-label">* Email:</label>
+        </div>
+        <div class="right-column">
+          <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <hr>
+      <div class="row">
+        <div class="left-column">
+          <label for="age" id="number-label">* Age:</label>
+        </div>
+        <div class="right-column">
+          <input type="number" name="age" id="number" min="1" max="100" placeholder="Age" required>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <hr>
+      <div class="row">
+        <div class="left-column">
+          <label for="question-1">Whitch coffe menu do you like best?</label>
+        </div>
+        <div class="right-column">
+          <select name="question-4" id="dropdown">
+            <option disaled value>Select an option</option>
+            <option value="coffee">Coffee</option>
+            <option value="ice coffee">Ice Coffee</option>
+            <option value="signature">Signature</option>
+          </select>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <hr>
+      <div class="row">
+        <div class="left-column">
+          <label for="question-3">How likely is that you would recommend cafe to friends?</label>
+        </div>
+        <div class="right-column">
+          <input type="radio" name="choice" value="one" id="option-1">
+          <label for="option-1">Definitely</label><br>
+          <input type="radio" name="choice" value="two" id="option-2">
+          <label for="option-2">Maybe</label><br>
+          <input type="radio" name="choice" value="three" id="option-3">
+          <label for="option-3">Not sure</label>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <hr>
+      <div class="row">
+        <div class="left-column">
+          <label for="preferences">Which coffe do you usually choose?
+          <br>
+          (Check all that apply):
+          </label>
+        </div>
+        <div class="right-column display">
+          <input type="checkbox" name="choise-1" value="1" id="prefer-1">
+          <label for="prefer-1">Espresso</label><br>
+          <input type="checkbox" name="choice-2" value="2" id="prefer-2">
+          <label for="prefer-2">Black</label><br>
+          <input type="checkbox" name="choice-3" value="3" id="prefer-3">
+          <label for="prefer-3">Americano</label><br>
+          <input type="checkbox" name="choice-4" value="4" id="prefer-4">
+          <label for="prefer-4">Flat White</label><br>
+          <input type="checkbox" name="choice-5" value="5" id="prefer-5">
+          <label for="prefer-5">Mocha</label><br>
+          <input type="checkbox" name="choice-6" value="6" id="prefer-6">
+          <label for="prefer-6">Almond Latte</label><br>
+          <input type="checkbox" name="choice-7" value="7" id="prefer-7">
+          <label for="prefer-7">Latte</label><br>
+          <input type="checkbox" name="choice-8" value="8" id="prefer-8">
+          <label for="prefer-8">Cappuccino</label><br>
+          <input type="checkbox" name="choice-9" value="9" id="prefer-9">
+          <label for="prefer-9">White Chocolate Latte</label><br>
+          <input type="checkbox" name="choice-10" value="10" id="prefer-10">
+          <label for="prefer-10">Peppermint Mocha</label><br>
+          <input type="checkbox" name="choice-11" value="11" id="prefer-11">
+          <label for="prefer-12">Double Express with Ice</label><br>
+          <input type="checkbox" name="choice-12" value="12" id="prefer-12">
+          <label for="prefer-12">Frappe</label><br>
+          <input type="checkbox" name="choice-13" value="13" id="prefer-13">
+          <label for="prefer-13">Frappe with Flavor</label><br>
+          <input type="checkbox" name="choice-14" value="14" id="prefer-14">
+          <label for="prefer-14">Latte with Ice</label><br>
+          <input type="checkbox" name="choice-15" value="15" id="prefer-15">
+          <label for="prefer-15">Mocha with Ice</label><br>
+          <input type="checkbox" name="choice-16" value="16" id="prefer-16">
+          <label for="prefer-16">Caramel Macchiato with Ice</label><br>
+          <input type="checkbox" name="choice-17" value="17" id="prefer-17">
+          <label for="prefer-17">Cosonut Milk Latte</label><br>
+          <input type="checkbox" name="choice-18" value="18" id="prefer-18">
+          <label for="prefer-18">Icy Spicy</label><br>
+          <input type="checkbox" name="choice-19" value="19" id="prefer-19">
+          <label for="prefer-19">Salted Caramel Macchiato</label><br>
+          <input type="checkbox" name="choice-20" value="20" id="prefer-20">
+          <label for="prefer-20">Weekly Coffee</label>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <hr>
+      <div class="row">
+        <div class="left-column">
+          <label for="qiustion-5">Any Comments or Suggestions?</label>
+        </div>
+        <div class="right-column">
+          <textarea name="comment" id="comment" cols="25" rows="5" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="btn">
+        <button type="submit" id="submit">Submit</button>
+    </div>
+    </form>
+  </div>
+
+<!-- CDN link to run the tests -->
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+</body>
+</html>
