@@ -1,0 +1,382 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #061404;
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 34px;
+  padding: 15px 0;
+  color: #45082b;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 26px;
+  color: #45082b;
+  padding: 10px;
+  text-transform: uppercase
+}
+
+h4 {
+  font-size: 22px;
+  padding: 10px 0 20px 0;
+}
+
+p {
+  line-height: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.clear {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Navbar */
+header {
+  background: #48631e;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo {
+  float: left;
+  font-size: 52px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+#navbar {
+  float: right;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #b0ba8e;
+  display: block;
+  padding: 40px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#navbar ul li a:hover {
+  color: #d19dd0;
+  transition: all 0.4s ease-in;
+}
+
+/* Showcase */
+#showcase {
+  margin-top: 90px;
+  background: #b0ba8e;
+  border-bottom: 20px solid #889778;
+}
+
+#showcase .showcase-content {
+ float: left;
+ width: 47%;
+ padding: 15% 1% 0 0;
+}
+
+#showcase .showcase-img {
+  float: right;
+  width: 28%;
+  margin-right: 15%;
+}
+
+/* Aboaut */
+#about {
+  background: url('../img/about.jpg') no-repeat center center/cover;
+}
+
+#about .about-content-title{
+  float: left;
+  width: 20%;
+  padding: 30px;
+  background: rgba(68, 84, 11, 0.95);
+  position: relative;
+  top: 40px;
+  z-index: 1;
+}
+
+#about .about-content-text {
+  float: right;
+  width: 68%;
+  padding: 70px 70px 70px 120px;
+  background: rgba(176, 186, 142, 0.6);
+  position: relative;
+  top: -33px;
+}
+
+/* Services */
+#services {
+  background: #889778;
+  border-top: 20px solid #061404;
+  border-bottom: 20px solid #061404;
+}
+
+#services .services-content-title {
+  float: left;
+  width: 20%;
+  padding: 30px;
+  background: rgba(68, 84, 11, 0.95);
+  position: relative;
+  top: -10px;
+}
+
+#services .services-content-text {
+  float: right;
+  width: 85%;
+}
+
+#services .box {
+  float: left;
+  width: 25%;
+  margin: 1%;
+  padding: 3%;
+  background: rgba(176, 186, 142, 0.6);
+  position: relative;
+  top:-50px;
+  left: 20px;
+}
+
+/* Contact */
+#contact {
+  background: url('../img/contact.jpg') no-repeat center center/cover;
+}
+
+#contact .bg {
+  background: rgba(176, 186, 142, 0.6);
+  padding: 40px;
+  width: 40%;
+}
+
+#contact .contact-form {
+  background: rgba(68, 84, 11, 0.95);
+  padding: 30px;
+}
+
+#contact .form-group {
+  margin: 20px 0;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+  width: 100%;
+}
+
+#contact .submit {
+  background: #45082b;
+  color: #b0ba8e;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #061404;
+  border-top: 20px solid #48631e;
+}
+
+footer p {
+  color: #b0ba8e;
+  text-align: center;
+  padding: 30px;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLETS */
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 32px;
+    padding: 10px 0;
+  }
+
+  /* Navbar */
+  #navbar {
+    float: none;
+    clear: left;
+    width: 100%;
+  }
+
+  .logo {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+
+  #navbar ul li {
+    width: 25%;
+    text-align: center;
+  }
+
+  #navbar ul li a {
+    padding: 20px;
+    float: none;
+  }
+
+  /* Showcase */
+  #showcase {
+    margin-top: 125px;
+  }
+
+  #showcase .showcase-content {
+    width: 52%;
+    padding: 10% 1% 0 0;
+   }
+
+  #showcase .showcase-img {
+    width: 30%;
+    margin-right: 8%;
+  }
+
+  /* About */
+  #about .about-content-title{
+    width: 35%;
+  }
+  
+  #about .about-content-text {
+    width: 65%;
+    padding: 70px;
+    top: -30px;
+  }
+
+  /* Services */
+  #services .services-content-title {
+    width: 35%;
+  }
+  
+  #services .box {
+    width: 92%;
+    top:-40px;
+  }
+  
+  /* Contact */
+  #contact .bg {
+    width: 55%;
+  }
+}
+
+/* MOBILES */
+@media screen and (max-width: 480px) {
+  /* Navbar */
+  header {
+    background: rgba(72, 99, 30, 0.85);
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  .burger-nav {
+    display: block;
+    height: 25px;
+    width: 100%;
+    background: url('../img/burgernav.png') no-repeat 98% center;
+    background-color: #45082b;
+    cursor: pointer;
+    padding-bottom: 15px;
+  }
+
+  header .container {
+    padding: 0;
+  }
+
+  #navbar ul {
+    overflow: hidden;
+    height: 0;
+  }
+
+  #navbar ul.open {
+    height: auto;
+  } 
+  
+  #navbar ul li {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  #navbar ul li a {
+    border-bottom: 1px solid #b0ba8e;
+    text-align: left;
+    padding: 8px;
+  }
+
+  /* Showcase */
+  #showcase {
+    margin-top: 100px;
+  }
+
+  #showcase .showcase-content {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 8% 0;
+   }
+   
+   #showcase .showcase-img {
+     float: none;
+      width: 0%;
+   }
+
+   /* About */
+   #about .about-content-title{
+    float: none;
+    width: auto;
+    top: 20px;
+  }
+  
+  #about .about-content-text {
+    float: none;
+    width: auto;
+    padding: 20px;
+    top: 0;
+    margin: 0 1%;scroll-margin-block:
+  }
+
+  /* Services */
+  #services .services-content-title {
+    float: none;
+    width: auto;
+  }
+  
+  #services .services-content-text {
+    float: none;
+    width: auto;
+  }
+
+  #services .box {
+    left: 0;
+  }
+
+  /* Contact */
+  #contact .bg {
+    width: auto;
+    padding: 30px;
+  }
+
+  footer p {
+    padding: 30px 10px;
+  }
+}
