@@ -1,0 +1,191 @@
+:root {
+  --dark-blue: #255373;
+  --light-blue: #d4e1e8;
+  --yellow: #b9c41e;
+}
+
+html,
+body {
+  font-family: 'Cormorant', serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: var(--yellow);
+}
+
+h2 {
+  font-size: 1.7rem;
+  color: var(--dark-blue);
+  padding: 0.5em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.1;
+  padding: 0.5em;
+}
+
+hr {
+  background: var(--yellow);
+  height: 3px;
+  border: none;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--light-blue);
+  color: var(--dark-blue);
+  border: none;
+  padding: 0.5em 2em;
+  margin: 1.25em;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: var(--yellow);
+  transition: 0.4s all ease-in-out;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background:#ffffff;
+  border-bottom: 1px solid var(--dark-blue);
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar ul li {
+  display: inline-block;
+  margin: 1em 0.20em;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.2em;
+  color: var(--dark-blue);
+}
+
+#navbar ul li a:hover,
+#navbar ul li a:focus {
+  color: var(--yellow);
+  transition: 0.4s all ease-in;
+}
+
+/* Hero */
+#welcome-section {
+  background: url('../img/bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* About */
+#about {
+  padding: 3em 0;
+}
+
+#about .about-content {
+  margin-bottom: 1em;
+}
+
+/* Portfolio */
+#projects {
+  padding: 3em 0;
+}
+
+#projects .project-tile {
+  display: inline-block;
+  margin: 1em 0;
+  border: 3px solid var(--dark-blue);
+  border-radius: 5px;
+}
+
+/* Footer */
+#contact {
+  padding: 1.5em 0;
+  background: var(--dark-blue);
+  color: var(--light-blue);
+}
+
+#contact .contact-item {
+  padding: 0.5em 0;
+}
+
+/* TABLETS, COMPUTERS */
+@media screen and (min-width: 480px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+
+  .container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #about,
+  #projects,
+  #contact {
+    padding: 4em 0;
+  }
+
+  #navbar ul li a {
+    padding: 1em;
+  }
+
+  #about .about-content {
+    width: 55%;
+  }
+
+  #about .about-img {
+    width: 40%;
+  }
+
+  #projects .container-flex-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #projects .project-tile {
+    width: 31.3%;
+    margin: 1%;
+    box-sizing: border-box;
+  }
+
+  #projects .project-tile:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  #projects .project-tile:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  #contact .contact-item i,
+  #contact .contact-item p {
+    display: inline-block;
+    margin: 0.1em;
+  }
+}
