@@ -1,0 +1,266 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #83a41f;
+  --light-color: #fff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: var(--light-color);
+  color: var(--primary-color);
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  display: block;
+  padding: 10px 30px;
+  color: var(--light-color);
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--primary-color);
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--light-color);
+  padding: 10px 5px;
+  margin: 0 5px;
+  display: block;
+}
+
+.navbar a:hover {
+  border-bottom: var(--secondary-color) 2px solid;
+  cursor: pointer;
+}
+
+/* Header */
+.hero {
+  background: url(../img/background.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: var(--light-color);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero * {
+  z-index: 5;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.showcase p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* Portfolio */
+.portfolio {
+  margin: 75px 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* About */
+.about-content {
+  text-align: center;
+  background: rgb(179, 179, 179);
+  padding: 30px 0;
+}
+
+/* Contact */
+.contact {
+  margin: 75px 0;
+}
+
+.callback-form {
+  width: 100%;
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input {
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  box-sizing: border-box;
+  border: #ebe9e9 1px solid;
+}
+
+.callback-form input:focus {
+  outline-color: var(--secondary-color);
+}
+
+.callback-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: var(--primary-color);
+}
+
+.footer a,
+.footer p {
+  color: var(--secondary-color);
+}
+
+.footer p {
+  margin-top: 20px;
+}
+
+.footer a:hover {
+  opacity: 0.75;
+}
+
+.footer .social > * {
+  margin: 10px;
+}
+
+/* MRDIA QUERIES */
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+  /* Navbar */
+  .navbar ul {
+    justify-content: flex-end;
+  }
+
+  .navbar ul li a {
+    padding: 10px 20px;
+  }
+
+  .showcase p {
+    max-width: 700px;
+  }
+
+  /* Portfolio */
+  .portfolio-img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .single-img {
+    width: 50%;
+  }
+
+  /* About */
+  .about .about-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .about .about-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .about-img,
+  .about-content {
+    height: 100%;
+  }
+
+  .about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Loptop */
+@media screen and (min-width: 1025px) {
+  .single-img {
+    width: 25%;
+  }
+
+  .callback-form {
+    max-width: 700px;
+  }
+}

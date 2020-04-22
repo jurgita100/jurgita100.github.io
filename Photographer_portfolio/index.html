@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Photographer Portfolio</title>
+  </head>
+  <body id="home">
+    <header class="hero">
+      <!-- Navbar -->
+      <nav id="navbar" class="navbar">
+        <div class="container">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Showcase -->
+      <div class="showcase container">
+        <h1>John Doe</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+          officiis quo placeat ipsa aut. Deleniti!
+        </p>
+      </div>
+    </header>
+    <main>
+      <!-- Portfolio -->
+      <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-img">
+          <img class="single-img" src="img/portfolio1.jpg" alt="Snowflake1" />
+          <img class="single-img" src="img/portfolio2.jpg" alt="Snowflake2" />
+          <img class="single-img" src="img/portfolio3.jpg" alt="Birch" />
+          <img class="single-img" src="img/portfolio4.jpg" alt="Forest1" />
+          <img class="single-img" src="img/portfolio5.jpg" alt="Forest2" />
+          <img class="single-img" src="img/portfolio6.jpg" alt="Forest3" />
+          <img class="single-img" src="img/portfolio7.jpg" alt="Mushroom1" />
+          <img class="single-img" src="img/portfolio8.jpg" alt="Mushroom2" />
+        </div>
+        <div class="flex-container">
+          <a href="#" class="btn">All Works</a>
+        </div>
+      </section>
+      <!-- About -->
+      <section id="about" class="about">
+        <div class="about-row">
+          <div class="about-column">
+            <div class="about-img">
+              <img src="img/about.jpg" alt="" />
+            </div>
+          </div>
+          <div class="about-column">
+            <div class="about-content">
+              <div class="container">
+                <h2>About Me</h2>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus maiores nisi, rerum voluptates soluta maxime quam
+                  explicabo molestias at enim, temporibus quae. Sapiente quidem
+                  explicabo, sit recusandae in quos itaque illo ipsum, magni
+                  placeat ipsam fugit, aliquam doloremque voluptas quam quasi
+                  porro. Mollitia exercitationem aspernatur corporis labore.
+                  Nihil, debitis dolor!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Request Callback</h2>
+          <div class="flex-container">
+            <form action="" class="callback-form">
+              <div class="form-control">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Name" />
+              </div>
+              <div class="form-control">
+                <label for="email"></label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-control">
+                <label for="phone"></label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone"
+                />
+              </div>
+              <input type="submit" value="Send" id="submit" class="btn" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright & copy; 2020</p>
+    </footer>
+  </body>
+
+  <!-- JQuery CDN -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Local JS File -->
+  <script src="main.js"></script>
+</html>
